@@ -17,6 +17,6 @@ after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # pushing these images to dockerhub
   - docker push sgryt87/multi-client
-  - docker push sgryt87/multi-ngnix
+  - docker push sgryt87/multi-nginx
   - docker push sgryt87/multi-server
   - docker push sgryt87/multi-worker
